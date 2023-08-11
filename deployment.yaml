@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: devsecops-greens
-          image: 865955034469.dkr.ecr.us-east-2.amazonaws.com/malar-123:1.1
+          image: 865955034469.dkr.ecr.us-east-2.amazonaws.com/malar-repo:1.1
 
           imagePullPolicy: Always
           ports:
