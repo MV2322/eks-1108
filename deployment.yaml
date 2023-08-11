@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: devsecops-greens
+  labels:
+    app: devsecops-greens
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: devsecops-greens
+  template:
+    metadata:
+      labels:
+        app: devsecops-greens
+    spec:
+      containers:
+        - name: devsecops-greens
+          image: 865955034469.dkr.ecr.us-east-2.amazonaws.com/malar-123:1.1
+
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 8080
